@@ -22,12 +22,11 @@ const Header: React.FC<HeaderProps> = ({ darkMode, toggleDark }) => {
   return (
     <header className="fixed w-full bg-white dark:bg-gray-900 shadow-sm z-50">
       <nav className="container mx-auto px-6 py-4 flex items-center justify-between">
-        {/* Logo / Name */}
+        
         <div className="text-2xl font-bold text-gray-800 dark:text-gray-100">
           Chandana Gurram
         </div>
 
-        {/* Desktop Menu + Theme Toggle */}
         <div className="hidden md:flex items-center space-x-6">
           {menuItems.map(item => (
             <Link
